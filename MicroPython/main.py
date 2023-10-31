@@ -25,7 +25,6 @@ np.show()
 while True:
     if button_a.is_pressed():
         display.clear()
-        loop_counter = loop_counter - 1
         np[0] = (255, 0, 0)
         np[1] = (255, 0, 0)
         np[2] = (255, 0, 0)
@@ -34,5 +33,7 @@ while True:
         while True:
             sleep(500)
             display.scroll(str(loop_counter))
+
+            loop_counter = loop_counter - 1
 
             np[3 - loop_counter] = (0, 0, 0)
