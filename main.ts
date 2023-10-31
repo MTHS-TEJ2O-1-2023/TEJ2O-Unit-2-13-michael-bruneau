@@ -5,6 +5,10 @@
  * This program does loop
 */
 
+// variables
+let loopCounter: number = 4
+let sprite: game.LedSprite = null
+
 // setup
 basic.showIcon(IconNames.Happy)
 basic.pause(500)
