@@ -15,18 +15,18 @@ basic.pause(500)
 basic.clearScreen()
 neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-neopixelStrip.setPixelColor(4, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.show()
 
 input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   loopCounter = 4
   neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+  neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
   neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
   neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
-  neopixelStrip.setPixelColor(4, neopixel.colors(NeoPixelColors.Red))
 
   while (loopCounter > -1) {
     basic.pause(500)
