@@ -22,7 +22,7 @@ np[3] = (0, 0, 0)
 np.show()
 
 # loop
-while True: 
+while True:
     if button_a.is_pressed():
         display.clear()
         loop_counter = loop_counter - 1
