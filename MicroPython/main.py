@@ -31,9 +31,10 @@ while True:
         np[3] = (255, 0, 0)
 
         while True:
-            sleep(500)
-            display.scroll(str(loop_counter))
+            if loop_counter > -1:
+                sleep(500)
+                display.scroll(str(loop_counter))
 
-            loop_counter = loop_counter - 1
+                loop_counter = loop_counter - 1
 
-            np[3 - loop_counter] = (0, 0, 0)
+                np[(3 - loop_counter)] = (0, 0, 0)
