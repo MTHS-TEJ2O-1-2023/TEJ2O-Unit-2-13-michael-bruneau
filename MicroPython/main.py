@@ -32,7 +32,7 @@ while True:
         np[3] = (255, 0, 0)
 
         while True:
-            display.pause(500)
+            sleep(500)
             display.string(str(loop_counter))
 
             np[3 - loop_counter] = (0, 0, 0)
