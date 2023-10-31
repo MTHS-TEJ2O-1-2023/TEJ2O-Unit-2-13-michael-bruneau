@@ -29,6 +29,7 @@ while True:
         np[1] = (255, 0, 0)
         np[2] = (255, 0, 0)
         np[3] = (255, 0, 0)
+        np.show()
 
         while True:
             if loop_counter > -1:
@@ -38,3 +39,4 @@ while True:
                 loop_counter = loop_counter - 1
 
                 np[(3 - loop_counter)] = (0, 0, 0)
+                np.show()
