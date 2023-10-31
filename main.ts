@@ -7,9 +7,19 @@
 
 // variables
 let loopCounter: number = 4
-let sprite: game.LedSprite = null
 
 // setup
 basic.showIcon(IconNames.Happy)
 basic.pause(500)
 basic.clearScreen()
+
+input.onButtonPressed(Button.A, function () {
+  basic.clearScreen()
+  loopCounter = 4
+
+  while (loopCounter > 0) {
+    basic.pause(500)
+    basic.showNumber(loopCounter)
+    loopCounter = loopCounter - 1
+  }
+})
