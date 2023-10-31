@@ -31,12 +31,13 @@ while True:
         np[3] = (255, 0, 0)
         np.show()
 
-        while True:
-            if loop_counter > -1:
-                sleep(500)
-                display.scroll(str(loop_counter))
+        while loop_counter > -1:
+            sleep(500)
+            display.scroll(str(loop_counter))
 
-                loop_counter = loop_counter - 1
+            np[(3 - loop_counter)] = (0, 0, 0)
+            np.show()
 
-                np[(3 - loop_counter)] = (0, 0, 0)
-                np.show()
+            loop_counter = loop_counter - 1
+        display.clear()
+        display.show(Image.HAPPY)
