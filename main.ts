@@ -27,6 +27,8 @@ input.onButtonPressed(Button.A, function () {
   while (loopCounter > -1) {
     basic.pause(500)
     basic.showNumber(loopCounter)
+    neopixelStrip.setPixelColor((3 - loopCounter), neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.show()
     loopCounter = loopCounter - 1
   }
   basic.clearScreen()
