@@ -33,6 +33,6 @@ while True:
 
         while True:
             sleep(500)
-            display.string(str(loop_counter))
+            display.scroll(str(loop_counter))
 
             np[3 - loop_counter] = (0, 0, 0)
