@@ -28,11 +28,18 @@ input.onButtonPressed(Button.A, function () {
   neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
   neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
 
+  // loop
   while (loopCounter > -1) {
     basic.pause(500)
+
+    // counting from 4 to 0
     basic.showNumber(loopCounter)
+
+    // turn off neopixels
     neopixelStrip.setPixelColor((3 - loopCounter), neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.show()
+
+    // count down
     loopCounter = loopCounter - 1
   }
   basic.clearScreen()
