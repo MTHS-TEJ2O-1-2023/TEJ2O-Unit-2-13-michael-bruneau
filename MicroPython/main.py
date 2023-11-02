@@ -31,13 +31,19 @@ while True:
         np[3] = (255, 0, 0)
         np.show()
 
+        # if loop_counter greater than -1 loop code
         while loop_counter > -1:
             sleep(500)
+
+            # count from 4 to 0
             display.scroll(str(loop_counter))
 
+            # turn off neopixel
             np[(3 - loop_counter)] = (0, 0, 0)
             np.show()
 
+            # count down
             loop_counter = loop_counter - 1
+
         display.clear()
         display.show(Image.HAPPY)
