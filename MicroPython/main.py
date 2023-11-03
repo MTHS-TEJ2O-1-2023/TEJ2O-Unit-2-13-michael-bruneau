@@ -34,6 +34,7 @@ while True:
         # if loop_counter greater than -1 loop code
         while loop_counter > -1:
             sleep(500)
+            loop_counter = 4
 
             # count from 4 to 0
             display.scroll(str(loop_counter))
